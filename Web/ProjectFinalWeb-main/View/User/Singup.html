@@ -1,0 +1,31 @@
+<form action="index.php?view=api/user/createUser" method="post" enctype="multipart/form-data">
+    <label for="login">Identifiant</label>
+    <input type="text" id="login" name="login" class="form-control" required>
+    <label for="password">Mot de passe</label>
+    <input type="password" id="password" name="password" class="form-control" required>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" class="form-control" required>
+    <label for="FirstName">Prénom</label>
+    <input type="text" id="FirstName" name="FirstName" class="form-control" required>
+    <label for="LastName">Nom</label>
+    <input type="text" id="LastName" name="LastName" class="form-control" required>
+    <label for="Adresse">Adresse</label>
+    <input type="text" id="Adresse" name="Adresse" class="form-control" required>
+    <label for="Tel">Numéro de téléphone</label>
+    <input type="tel" id="Tel" name="tel" class="form-control" required>
+    <label for="Birthday">Date de naissance</label>
+    <input type="date" id="Birthday" name="Birthday" class="form-control" required>
+    <label for="Nation">Pays</label>
+    <select name ="Nation" id="Nation" class="form-control" required>
+        <option value="BEL">Belgique</option>
+        <option value="FRA">Françe</option>
+    </select>
+    <label for="lang">Language</label>
+    <select name="lang" id="lang" class="form-control" required>
+        <option value="en" selected>English</option>
+        <option value="fr">Français</option>
+    </select>
+    <label for="photo">Photo</label>
+    <p><input type="file" id="photo" name="photo"></p>
+    <input type="submit" class="btn btn-primary" value="Valider">
+</form>
